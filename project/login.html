@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="I2201 project">
+	<meta name="author" content="Team 28">
+	<link href="html logo.png" rel="icon" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LUFS1 - Login</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<style>
+		body {
+		  background: linear-gradient(
+			  130deg,
+			  rgba(49, 98, 164, 0.9),
+			  rgba(255, 175, 22, 0.9)
+			),
+			url("login bg.jpg")
+			  no-repeat;
+		  background-size: 100%;
+		}
+
+		.login {
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  width: 80%;
+		  max-width: 300px;
+		  height: 320px;
+		  padding: 10px;
+		  background: white;
+		  box-sizing: border-box;
+		  border: 2px solid #ffaf16;
+		  box-shadow: 5px 5px 20px 5px rgba(164, 99, 14, 0.8);
+		  border-radius: 22px;
+		  font-size: 16px;
+		  place-items: center;
+		  font-family: "Franklin Gothic Medium", "Franklin Gothic",
+			"ITC Franklin Gothic", Arial, sans-serif;
+		}
+		.login .info {
+		  height: 50px;
+		  width: 95%;
+		  margin-top: 35px;
+		  padding: 0px 10px 0px 10px;
+		  position: relative;
+		}
+
+		.login .info input {
+		  height: 100%;
+		  width: 85%;
+		  outline: none;
+		  font-size: 17px;
+		  padding-left: 20px;
+		  border: 2px solid rgba(255, 175, 22);
+		  border-radius: 25px;
+		  transition: all 0.3s ease;
+		}
+		.login .info label {
+		  position: absolute;
+		  top: 50%;
+		  left: 20px;
+		  color: #666666;
+		  font-weight: 400;
+		  font-size: 17px;
+		  pointer-events: none;
+		  transform: translateY(-50%);
+		  transition: all 0.3s ease;
+		}
+		.login .info input:focus ~ label,
+		.login .info input:valid ~ label,
+		.login .info input:active ~ label {
+		  top: 0%;
+		  font-size: 16px;
+		  color: #ffaf16;
+		  background: #fff;
+		  transform: translateY(-50%);
+		}
+
+		#RememberMe {
+		  margin-left: 16px;
+		  margin-top: 15px;
+		}
+
+		input[type="submit"] {
+		  position: relative;
+		  margin-left: 30%;
+		  margin-top: 5%;
+		  padding: 10px 40px;
+		  font-weight: bold;
+		  background: #ffaf16;
+		  border: 0 none;
+		  cursor: pointer;
+		  border-radius: 5px;
+		}
+
+		.login .form-logo {
+		  width: 11%;
+		  height: auto;
+		  margin-left: 39%;
+		  margin-top: -11%;
+		  border: 2px solid #ffaf16;
+		  border-radius: 50%;
+		  position: absolute;
+		  margin-bottom: 20px;
+		}
+
+		input:-webkit-autofill,
+		input:-webkit-autofill:hover, 
+		input:-webkit-autofill:focus, 
+		input:-webkit-autofill:active  {
+		  -webkit-box-shadow: 0 0 0 50px white inset !important;
+		}
+
+	</style>
+
+</head>
+<body>
+  <div class="login">
+      <img src="logo.png" class="form-logo" alt="LUFS Logo"/>
+        <form name="login" method="post" action="main.html" onsubmit="return validateForm();">
+          <div class="info" id="email">
+            <input type="text" name="uniEmail" required="required">
+            <label for="uniEmail">E-mail </label>
+          </div>
+          <div class="info" id="FileNumber">
+            <input type="text" name="FileNumber"size="6" required="required">
+            <label for="FileNumber">File Number </label>
+          </div>
+          <br/>
+          <input type="checkbox" id="RememberMe">
+          <label for="RememberMe">Remember Me</label><br/><br/>
+          <input type="submit" id="mySubmit" value="Login" required="required">
+        </form>
+    </div>
+</body>
+<script>
+function validateForm() {
+var x = document.forms[0].FileNumber.value;
+const studentEmail = "@st.ul.edu.lb";
+if(!(document.forms[0].uniEmail.value.includes(studentEmail))){
+alert("Please enter a valid student email");
+return false;
+}
+else if (!(Number.isInteger(+x)) || x<10000 || x>99999){
+alert("Please enter a valid file number");
+return false;
+}
+return true;
+}
+</script>
+</html>

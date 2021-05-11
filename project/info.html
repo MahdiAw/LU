@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="I2201 project">
+    <meta name="author" content="Team 28">
+    <link href="html logo.png" rel="icon" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LUFS1 - About</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .description {
+            margin: 0 15%;
+            margin-bottom: 30px;
+            padding-top: 30px;
+            font-weight: bold;
+            font-size: 31px;
+            font-family: MessinaSans, sans-serif;
+        }
+
+        #wrapper {
+            width: 70%;
+            margin: 0 15%;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #wrapper .last {
+            border-bottom: none;
+        }
+
+        .faculty-info {
+            position: relative;
+            float: left;
+            max-width: 550px;
+            width: 55%;
+            height: auto;
+        }
+
+        .faculty-info p {
+            font-size: 19px;
+        }
+
+        p {
+            word-break: break-word;
+            -ms-hyphens: auto;
+            font-family: calibiri, sans-serif;
+        }
+
+        .info-content {
+            border: 0px solid #FFAF16;
+        }
+
+        .info-content h1 {
+            margin-top: 0;
+            white-space: nowrap;
+            width: 0;
+            text-align: center;
+            transition: width 0.8s ease, color 0.8s ease;
+        }
+
+        .info-content:hover {
+            border-bottom: 1.5px solid #1653ee;
+            border-top: 1.5px solid #1653ee;
+        }
+
+        .info-content:hover h1 {
+            display: block;
+            width: 100%;
+            color: #1653ee;
+        }
+
+        .anchor {
+            text-decoration: underline;
+            color: #000;
+        }
+
+        .see-LU {
+            display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+            top: 10px;
+            float: right;
+            max-width: 275px;
+            width: 40%;
+        }
+
+        .see-LU a {
+            font-style: italic;
+            text-decoration: none;
+            color: #000;
+        }
+		
+		.location{
+			border: 3px solid #3162a4;
+			overflow: hidden;
+		}
+		
+		.location p {
+            font-size: 12px;
+			margin-top: 0;
+            margin-bottom: 0.2rem;
+        }
+
+        iframe {
+            width: 100%;
+            height: auto;
+        }
+
+        .album {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .album img {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="logo.png" alt="logo">
+        <h1>Lebanese University Faculty of Science - Branch One</h1>
+    </header>
+
+    <nav class="navigation">
+        <div><a href="main.html"> Home</a></div>
+        <div><a href="profile.html">Profile</a></div>
+        <div id="active"><a href="info.html">About</a></div>
+        <div><a href="help.html">Help</a></div>
+    </nav>
+
+    <p class="description">
+        The Faculty of Science is devoted to excellence in teaching, learning, and research, and to developing leaders in many disciplines who make a difference globally. The faculty, which is based in Hadath, has an enrollment of over 15,000 degree candidates, including undergraduate, graduate, and professional students.
+    </p>
+    <div id="wrapper">
+        <div class="faculty-info">
+            <div class="info-content">
+                <h1>History </h1>
+                <p>
+                    One of the first and largest Lebanese University faculties, the Faculty of Sciences was established in 1959. In the 1970s, it was the core around which Rafik Hariri University Campus, the largest Campus of the Lebanese University, was built in Hadath.
+                </p>
+            </div>
+            <div class="info-content">
+                <h1>About</h1>
+                <p>
+                    The Faculty is divided into five branches in five governorates, in addition to the sections in Akkar, Baalbeck, Bint-Jbeil, Byblos (Jbeil), Dibbiyeh and Tyre (Sour). It adopts continuously updated scientific programs to provide the job market with distinguished graduates. It diligently develops knowledge through learning, scientific research laboratories, research teams, and higher education programs.
+                </p>
+            </div>
+            <div class="info-content last">
+                <h1> Faculty at a Glance </h1>
+                <p>
+                    The Faculty of Science grants licenses in eleven fields including Mathematics, Physics, Biochemistry, Geology etc. It also offers excellent programs for master studies within the various fields of its teaching.<br> For more details on all the degrees the faculty offers click <a href="https://www.ul.edu.lb/faculte/branches.aspx?facultyId=6" class="anchor">here</a>.
+                </p>
+            </div>
+        </div>
+        <div class="see-LU">
+			<div>
+				<img src="faculty building.jpg" style="width: 100%" alt="faculty building">
+			</div>
+			<div>
+				<div class="album">
+					<img src="lab testing.jfif" style="margin-right:1.5%;" alt="lab testing">
+					<img src="lecture hall.jpg" alt="lecture hall">
+				</div>
+				<div class="album" style="margin-top:1.5%;">
+					<img src="exams.jpg" style="margin-right:1.5%;" alt="exams">
+					<img src="students.jpg" alt="students">
+				</div>
+			</div>
+            <div class="location">
+                <p>
+                    Address: <a href="https://goo.gl/maps/DbV6vbGeGHfntNBo7">Rafic Hariri University Campus, Hadath</a></p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d995.7060277749238!2d35.52196210874237!3d33.82869969998869!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f1834dcc1d40d%3A0xf6210289d5bed2d9!2sLebanese%20University%20-%20Faculty%20of%20Science!5e1!3m2!1sen!2sus!4v1611240327370!5m2!1sen!2sus"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="quick-links">
+            <div class="heading">
+                <h2> ABOUT </h2>
+                <a href="http://coursefs1.ul.edu.lb/moodle/index.php">Courses</a>
+                <a href="https://www.ul.edu.lb/faculte/council.aspx?facultyId=6">Faculty Council</a>
+                <a href="https://www.ul.edu.lb/faculte/regulations.aspx?facultyId=6">Rules & Regulations</a>
+
+            </div>
+            <div class="heading">
+                <h2>CONTACT US</h2>
+                <a href="tel:(+961)05461469">Phone</a>
+                <a href="http://ulfds1.ul.edu.lb/index.php?option=com_mailto&tmpl=component&link=aHR0cDovL3VsZmRzMS51bC5lZHUubGIvaW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZ2aWV3PWFydGljbGUmaWQ9NjphYm91dC11cyZJdGVtaWQ9MjU=">Email</a>
+                <a href="mailto:doyenfs@ul.edu.lb">The Dean's Office</a>
+
+            </div>
+            <div class="heading">
+                <h2> SOCIAL MEDIA </h2>
+                <a href="https://www.facebook.com/ul.fsciences/">Facebook</a>
+                <a href="https://www.instagram.com/ulfsciences/?hl=en">Instagram</a>
+                <a href="https://twitter.com/ulfsciences?lang=en">Twitter</a>
+            </div>
+        </div>
+        <div class="student">
+            Copyright &copy; Ali Kanso 96646
+        </div>
+    </footer>
+</body>
+
+</html>

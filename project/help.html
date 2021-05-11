@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="I2201 project">
+    <meta name="author" content="Team 28">
+    <link href="html logo.png" rel="icon" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LUFS1 - Help</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+	function GetSelectedSubject(identity){
+		var e = document.getElementById(identity);
+		var val =e.options[e.selectedIndex].value;
+		if(val == ""){
+		alert("Please choose a subject");
+		return true;
+		}
+	}
+	
+	function isEmpty1(){
+		var x = document.getElementById("course-question").value;
+		if(x == '' || !(x.replace(/^\s+|\s+$/g,""))){
+			alert("Question is empty");
+		}
+	}
+	
+	function isValidForm1(){
+		GetSelectedSubject('subject');
+		isEmpty1();
+	}
+	
+	function isValidForm2(){
+		if(document.getElementById("faculty-question").value == ''){
+			alert("Question is empty");
+		}
+	}
+
+	</script>
+
+	<style>
+		#wrapper {
+		  width: 70%;
+		  margin: 0 15%;
+		  overflow: hidden;
+		}
+		#wrapper a {
+		  color: black;
+		  font-style: italic;
+		  font-variant: small-caps;
+		}
+		#wrapper div {
+		  display: flex;
+		  margin-top: 20px;
+		  padding-bottom: 20px;
+		  border-bottom: 2px solid #000;
+		}
+		section {
+		  width: 50%;
+		}
+		input[type="submit"] {
+		  padding: 6px 24px;
+		  font-weight: bold;
+		  background: #eeaf16;
+		  border: 0 none;
+		  cursor: pointer;
+		  border-radius: 5px;
+		  outline: none;
+		}
+		table {
+		  text-align: left;
+		}
+		textarea {
+		  outline: none;
+		  width: 400px;
+		  height: 100px;
+		  max-width: 95%;
+		  max-height: 500px;
+		  min-width: 150px;
+		  min-height: 75px;
+		}
+
+		td,
+		th {
+		  border-style: none;
+		  padding: 20px;
+		  font-family: Arial, sans-serif;
+		}
+
+		tr:nth-of-type(even) {
+		  background-color: rgba(238, 175, 22, 0.8);
+		}
+		tr:nth-of-type(odd) {
+		  background-color: rgba(238, 175, 22, 0.6);
+		}
+		tr:first-of-type {
+		  background-color: #3162a4;
+		  color: #eaeaea;
+		}
+
+
+	</style>
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="logo.png" alt="logo">
+        <h1>Lebanese University Faculty of Science - Branch One</h1>
+    </header>
+
+    <nav class="navigation">
+		<div><a href="main.html"> Home</a></div>
+        <div><a href="profile.html">Profile</a></div>
+        <div><a href="info.html">About</a></div>
+        <div id="active"><a href="help.html">Help</a></div>
+    </nav>
+
+<div id="wrapper">
+  <div>
+    <section class="course-question">
+      <form name="form" method="get">
+        <select name="subject" id="subject">
+          <option value="" disabled selected hidden>Subject &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+          <option value="I2201">I2201</option>
+          <option value="I2202">I2202</option>
+          <option value="I2203">I2203</option>
+          <option value="I2204">I2204</option>
+          <option value="I2205">I2205</option>
+          <option value="I2206">I2206</option>
+          <option value="I2207">I2207</option>
+          <option value="I2208">I2208</option>
+          <option value="I2209">I2209</option>
+          <option value="I2210">I2210</option>
+          <option value="I2211">I2211</option>
+          <option value="I2231">I2231</option>
+          <option value="I2232">I2232</option>
+          <option value="M2250">M2250</option>
+          <option value="M2251">M2251</option>
+          <option value="S2250">S2250</option>
+        </select>
+        <br>
+        <br>
+        <textarea name="course-question" id="course-question" placeholder="Enter your question:"></textarea><br><br>
+        <input type="submit" value="Submit" onclick="isValidForm1();">
+    </section>
+
+    <section class="faculty-question">
+	  <br><br>
+      <textarea name="faculty-question" id="faculty-question" placeholder="Questions related to the faculty and student council should be put here:"></textarea><br><br>
+      <input type="submit" value="Submit" onclick="isValidForm2();">
+    </section>
+  </div>
+
+  <div>
+
+    <section>
+      <table>
+        <h2>Library Schedule</h2>
+        <tr>
+          <th>Day</th>
+          <th>Hours Range</th>
+        </tr>
+        <tr>
+          <td>Monday</td>
+          <td>8:00AM-12:00AM</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>8:00AM-10:00AM</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>10:00AM-12:00AM</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>9:00AM-11:00AM</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="library">
+      <h2> Libraries </h2>
+      <p> Dina Sukkar <br>
+        Phone: <a href="tel:(+961)01612623">+961 1 612623</a> <br>
+        Email: <a href="mailto:bcl@ul.edu.lb"> bcl@ul.edu.lb</a></p>
+    </section>
+
+  </div>
+
+  <div style="padding-bottom: 0; border-bottom: none;">
+
+    <section class="contacts2">
+      <h2> Social Service and Students' Affairs </h2>
+      <p>Central Administration <br>
+        Email:<a href="mailto:rsabeh@ul.edu.lb"> rsabeh@ul.edu.lb </a> </p>
+    </section>
+
+    <section class="IT">
+      <h2>IT Support </h2>
+      <p> IT Support/L.U. e-mail accounts<br>
+        Phone: <a href="tel:(+961)01612606">+961 1 612 606</a>, ext 1O5/107/108/111 <br>
+        Email: <a href="mailto:lunoc@ul.edu.lb"> lunoc@ul.edu.lb </a> </p>
+    </section>
+
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="quick-links">
+    <div class="heading">
+      <h2> ABOUT </h2>
+      <a href="http://coursefs1.ul.edu.lb/moodle/index.php">Courses</a>
+      <a href="https://www.ul.edu.lb/faculte/council.aspx?facultyId=6">Faculty Council</a>
+      <a href="https://www.ul.edu.lb/faculte/regulations.aspx?facultyId=6">Rules & Regulations</a>
+
+    </div>
+    <div class="heading">
+      <h2>CONTACT US</h2>
+      <a href="tel:(+961)05461469">Phone</a>
+      <a href="http://ulfds1.ul.edu.lb/index.php?option=com_mailto&tmpl=component&link=aHR0cDovL3VsZmRzMS51bC5lZHUubGIvaW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZ2aWV3PWFydGljbGUmaWQ9NjphYm91dC11cyZJdGVtaWQ9MjU=">Email</a>
+      <a href="mailto:doyenfs@ul.edu.lb">The Dean's Office</a>
+
+    </div>
+    <div class="heading">
+      <h2> SOCIAL MEDIA </h2>
+      <a href="https://www.facebook.com/ul.fsciences/">Facebook</a>
+      <a href="https://www.instagram.com/ulfsciences/?hl=en">Instagram</a>
+      <a href="https://twitter.com/ulfsciences?lang=en">Twitter</a>
+    </div>
+  </div>
+  <div class="student">
+    Copyright &copy; Mostafa Taher
+  </div>
+</footer>
+</body>
+</html>
+

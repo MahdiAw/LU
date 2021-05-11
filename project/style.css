@@ -1,0 +1,96 @@
+body {
+  background: linear-gradient(130deg, white 10%, #c4c4c4 40%, #f1f1b8);
+  margin: 0;
+  background-size: 100%;
+  font-family: calibiri, sans-serif;
+  font-weight: 100;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+p{
+  word-break: break-word;
+  -ms-hyphens: auto;
+  font-family: calibiri,sans-serif;
+  font-size: 19px;
+}
+
+header {
+  padding: 2%;
+  display: flex;
+  background: linear-gradient(to right, #3162a4, #eeaf16);
+}
+header h1 {
+  position: relative;
+  margin: auto;
+  font-size: 3vw;
+}
+
+.logo {
+  height: 10vw;
+  margin: auto;
+}
+
+nav.navigation {
+  z-index: 2;
+  position: sticky;
+  top: 0;
+}
+
+.navigation {
+  display: flex;
+  align-content: space-between;
+  background: #3162a4;
+  border-bottom: #eeaf16 5px solid;
+}
+.navigation div {
+  text-align: center;
+  width: 25%;
+  height: 44px;
+}
+.navigation div a {
+  font-size: 25px;
+}
+.navigation #active {
+  background: #eeaf16;
+}
+
+.footer {
+  margin-top: 30px;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  width: 100%;
+  color: aliceblue;
+  background-color: #3162a4;
+}
+
+.quick-links{
+  display: flex;
+  justify-content: center; 
+  margin-bottom: 20px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  margin-right: 90px;
+}
+.heading a {
+  margin-bottom: 7px;
+  font-size: 13px;
+}
+.heading h2 {
+  font-size: 25px;
+}
+.heading a:hover {
+  color: #c927b3;
+  transition: 0.3s ease-out;
+}
+.student{
+  text-align: center;
+  font-size:.6em;
+  font-style: italic;
+}

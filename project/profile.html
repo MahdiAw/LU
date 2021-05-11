@@ -1,0 +1,569 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="I2201 project">
+	<meta name="author" content="Team 28">
+	<link href="html logo.png" rel="icon" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LUFS1 - Profile</title>
+    <link rel="stylesheet" type ="text/css" href="style.css">
+    
+    <script type="text/javascript" >
+           
+           
+            function submition(){
+                var x = document.getElementById("radiobtn");
+
+                x.style.display='none';
+            }
+            function resize(){
+                
+                var y = document.getElementById('mainforjs');
+                var last = y.innerHTML;
+                y.innerHTML = "<img style='width:40%;height:40% ;margin-left:30%; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);border:solid #3162a4;' src=profile.jpg>";
+                document.body.style.backgroundColor = red;
+            
+            }
+            document.addEventListener('keyup', function(event) {
+                if(event.keyCode == 27 || event.keyCode ==13) {
+                    location.href = "profile.html";
+                }
+                
+            });
+            
+    </script>
+    <style>
+    main{
+    margin-top: 5%;
+	margin-bottom: 5%;
+    }
+    .Profile{
+    width:50%;
+    margin: 0 auto ;
+    }
+
+    .editbtn {
+    
+    text-decoration: none;
+    padding: 5px;
+    border-bottom: 20px;
+    width: 10px;
+    background-color: transparent; 
+    border: 2px solid #5a5c5d;
+    color: #5a5c5d;
+    
+    }
+    .editbtn:hover{
+    border-color: #eeaf16;
+    color: #eeaf16;
+    box-shadow: 2px 2px 2px #3162a4;
+    }
+    .Profile img{
+        width: 150px;
+        height: 150px;
+        margin-left: 40%;
+        border: solid;
+        border-color: #3162a4;
+        border-radius: 50%;
+        box-shadow: 20px 15px 15px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        cursor: pointer;
+        opacity: 0.97;
+    }
+    .Profile img:hover{
+    opacity: 1;
+    filter: drop-shadow(5px 5px 5px rgb(175, 164, 164));
+    }
+
+    /* student info */
+    .ProfInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    
+    width: 100%;
+    height: 200px;
+    }
+    .Inforight{
+    float: right;
+    }
+    /* table */
+    .Profile h1{
+    color: #3162a4;
+    }
+    th{
+
+    border-bottom: solid;
+    border-radius: 1px;
+    border-color: rgba(0, 0, 0, 0.1); 
+    cursor: pointer;
+    }
+
+    th,td {
+    cursor: pointer;  
+        padding: 15px;
+        background-color: #eeeeee7e;
+    color: #fff;
+    text-align: left;
+    }
+    td:hover{
+    background-color: #504f4f7e;
+    }
+    table{
+    
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    td{
+    text-align: left;
+    }
+
+    /* optional materials */
+
+    #radiobtn{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    height: auto;
+    width: 50%;
+    padding: 20px;
+    }
+    #radiobtn h1{
+    color:#3162a4;
+    }
+    #radiobtn ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+        overflow: auto;
+    }
+    #radiobtn ul li{
+    color: #AAAAAA;
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100px;
+        border-bottom: 1px solid #333;
+    }
+    #radiobtn ul li input[type=radio]{
+    position: absolute;
+    visibility: hidden;
+    }
+
+    #radiobtn ul li label{
+    display: block;
+    position: relative;
+    font-weight: 300;
+    font-size: 1.35em;
+    padding: 25px 25px 25px 80px;
+    margin: 10px auto;
+    height: 30px;
+    
+    cursor: pointer;
+    
+    }
+    #radiobtn ul li label{
+    color: #000000;
+    }
+    #radiobtn ul li:hover label{
+        color: #AAAAAA;
+    }
+
+    #radiobtn ul li .check{
+    display: block;
+    position: absolute;
+    border: 5px solid #AAAAAA;
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+    top: 30px;
+    left: 20px;
+        
+        transition: border .25s linear;
+        
+    }
+
+    #radiobtn ul li:hover .check {
+    border: 5px solid #eeaf16;
+    }
+
+    #radiobtn ul li .check::before {
+    display: block;
+    position: absolute;
+        content: '';
+    border-radius: 100%;
+    height: 15px;
+    width: 15px;
+    top: 5px;
+        left: 5px;
+    margin: auto;
+        transition: linear-gradient(130deg, white 10%, #c4c4c4 40%, #eeaf16) 0.25s linear;
+
+    }
+	
+	#radiobtn ul li label span{
+	float: right;
+	}
+
+    input[type=radio]:checked ~ .check {
+    border: 5px solid #eeaf16;
+    }
+
+    input[type=radio]:checked ~ .check::before{
+    background: #eeaf16;
+    }
+
+    input[type=radio]:checked ~ label{
+    color: black;
+    }
+
+
+
+
+    </style>
+    
+    
+        
+</head>
+<body>
+<header>
+  <img class="logo" src="logo.png" alt="logo">
+  <h1>Lebanese University Faculty of Science - Branch One</h1>
+</header>
+
+<nav class="navigation">
+  <div><a href="main.html"> Home</a></div>
+  <div id="active"><a href="profile.html">Profile</a></div>
+  <div><a href="info.html">About</a></div>
+  <div><a href="help.html">Help</a></div>
+</nav>
+
+<!-- profile -->
+
+<main id="mainforjs">
+
+    <div class="Profile" >
+        
+        <img id ="profileimg" onclick="resize()" src="profile.jpg">
+        <a href="#" class="editbtn" >Upload</a>
+        
+        <br>
+        <br>
+
+        <hr>
+        <div class="ProfInfo">
+
+            <div class="Infoleft">
+                    <h2>Student Name:</h2>
+                    <p>Nick Parlante</p>
+                    
+                
+                
+                    <h2>Student Id:</h2>
+                    <p>50123 </p>
+            </div>
+            <div class="Inforight">
+                <h2>Student Email:</h2>
+                <p>NickParlante@st.ul.edu.lb</p>
+           
+            
+                <h2>Student Year:</h2>
+                <p>Second Year</p>
+            </div>
+        
+        </div>
+
+        
+        <hr>
+        
+
+        <h1> Program </h1>
+        <!-- program table -->
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>8:00-9:30</b></td>
+                        <td>I2201</td>
+                        <td>I2205</td>
+                        <td>M2250</td>
+                        <td>I2201</td>
+                        <td>I2201/M2250</td>
+                    </tr>
+                    <tr>
+                        <td><b>9:50-11:20</b></td>
+                        <td>I2204</td>
+                        <td><b>Break</b></td>
+                        <td>I2204</td>
+                        <td>I2231</td>
+                        <td>I2204</td>
+                    </tr>
+                    <tr>
+                        <td><b>11:30-13:00</b></td>
+                        <td>I2203</td>
+                        <td>I2203</td>
+                        <td>I2205</td>
+                        <td>I2203</td>
+                        <td><b>Break</b>/M2250</td>
+                    </tr>
+                    <tr>
+                        <td><b>13:00-14:30</b></td>
+                        <td>I2202</td>
+                        <td>I2202</td>
+                        <td>I2231/I2232</td>
+                        <td>S2250</td>
+                        <td><b>Break</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>15:00-16:30</b></td>
+                        <td>S2250</td>
+                        <td>M2251</td>
+                        <td>I2231</td>
+                        <td>M2251</td>
+                        <td><b>Break</b></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <br>
+
+        <hr>
+     
+
+        <h1> Marks </h1>
+        <!-- mark table 2 -->
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>First Partial</th>
+                        <th>First Final</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>I2201</b></td>
+                        <td> 1</td>
+                        <td> 23</td>
+
+                    </tr>
+                    <tr>
+                        <td><b>I2202</b></td>
+                        <td> 2</td>
+                        <td> 33</td>
+
+                    </tr>
+                    <tr>
+                        <td><b>I2203</b></td>
+                        <td> 2</td>
+                        <td> 30.3</td>
+
+                    </tr>
+                    <tr>
+                        <td><b>I2204</b></td>
+                        <td> 25</td>
+                        <td> 75</td>
+
+                    </tr>
+                    <tr>
+                        <td><b>I2205</b></td>
+                        <td> 2.01</td>
+                        <td> 3.01</td>
+
+                    </tr>
+					<tr>
+                        <td><b>M2250</b></td>
+                        <td> 5.6</td>
+                        <td> 32</td>
+
+                    </tr>
+					<tr>
+                        <td><b>S2250</b></td>
+                        <td> 2.15</td>
+                        <td> 60</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+		
+		<br><br>
+		
+		<div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Second Partial</th>
+                        <th>Second Final</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>I2206</b></td>
+                        <td> -</td>
+                        <td> -</td>
+
+                    </tr>
+                    <tr>
+                        <td><b>I2207</b></td>
+                        <td> -</td>
+                        <td> -</td>
+
+                    </tr>
+                    <tr>
+                        <td><b>I2208</b></td>
+                        <td> -</td>
+                        <td> -</td>
+
+                    </tr>
+                    <tr>
+                        <td><b>I2209</b></td>
+                        <td> -</td>
+                        <td> -</td>
+
+                    </tr>
+                    <tr>
+                        <td><b>I2210</b></td>
+                        <td> -</td>
+                        <td> -</td>
+
+                    </tr>
+					<tr>
+                        <td><b>I2211</b></td>
+                        <td> -</td>
+                        <td> -</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+		
+		<br><br>
+		
+		<div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Partial</th>
+                        <th>Final</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>First Elective</b></td>
+                        <td> -</td>
+                        <td> -</td>
+
+                    </tr>
+                    <tr>
+                        <td><b>Second Elective</b></td>
+                        <td> -</td>
+                        <td> -</td>
+
+                    </tr>
+                    <tr>
+                        <td><b>English</b></td>
+                        <td> -</td>
+                        <td> -</td>
+
+					</tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+    <!-- optional materials -->
+    <br>
+   
+    
+
+    <div id="radiobtn">
+        <br>
+        <br>
+
+        <h1>Elective Courses </h1>
+        
+      <ul>
+      <li>
+        <input type="radio" id="f-option" name="selector">
+        <label for="f-option">Python <span> I2232<span></label>
+        
+        <div class="check"></div>
+      </li>
+      
+      <li>
+        <input type="radio" id="s-option" name="selector">
+        <label for="s-option">OR <span> I2231<span></label>
+        
+        <div class="check"><div class="inside"></div></div>
+      </li>
+      
+      <li>
+        <input type="radio" id="t-option" name="selector">
+        <label for="t-option">MatLab <span> M2251<span></label>
+        
+        <div class="check"><div class="inside"></div></div>
+      </li>
+    </ul>
+    <input type="button" onclick="submition()" class="editbtn" value="Submit" style="float: right; width: 20%; margin-top: 30px; cursor: pointer;" >
+    </div>
+    
+    
+    
+    
+
+</main>
+
+<footer class="footer">
+  <div class="quick-links">
+    <div class="heading">
+      <h2> ABOUT </h2>
+      <a href="http://coursefs1.ul.edu.lb/moodle/index.php">Courses</a>
+      <a href="https://www.ul.edu.lb/faculte/council.aspx?facultyId=6">Faculty Council</a>
+      <a href="https://www.ul.edu.lb/faculte/regulations.aspx?facultyId=6">Rules & Regulations</a>
+
+    </div>
+    <div class="heading">
+      <h2>CONTACT US</h2>
+      <a href="tel:(+961)05461469">Phone</a>
+      <a href="http://ulfds1.ul.edu.lb/index.php?option=com_mailto&tmpl=component&link=aHR0cDovL3VsZmRzMS51bC5lZHUubGIvaW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZ2aWV3PWFydGljbGUmaWQ9NjphYm91dC11cyZJdGVtaWQ9MjU=">Email</a>
+      <a href="mailto:doyenfs@ul.edu.lb">The Dean's Office</a>
+
+    </div>
+    <div class="heading">
+      <h2> SOCIAL MEDIA </h2>
+      <a href="https://www.facebook.com/ul.fsciences/">Facebook</a>
+      <a href="https://www.instagram.com/ulfsciences/?hl=en">Instagram</a>
+      <a href="https://twitter.com/ulfsciences?lang=en">Twitter</a>
+    </div>
+  </div>
+  <div class="student">
+    Copyright &copy; Ali Awada 97860
+  </div>
+</footer>
+
+</body>
+</html>

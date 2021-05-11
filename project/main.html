@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="I2201 project">
+	<meta name="author" content="Team 28">
+	<link href="html logo.png" rel="icon" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LUFS1 - Home page</title>
+	<link rel="stylesheet" type ="text/css" href="style.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<header>
+  <img class="logo" src="logo.png" alt="logo">
+  <h1>Lebanese University Faculty of Science - Branch One</h1>
+</header>
+
+<style>
+
+.intro h1{
+   color:  #3162a4;
+   font-weight: 800;
+   font-size: 33px;
+   line-height: 42px;
+   letter-spacing: 1px;
+   margin-top: 50px;
+}
+  
+  .intro-image{
+        position: relative;
+      }
+    
+ .descone {
+          position: absolute;
+          color:  white ;
+          font-size: 60px;
+          text-shadow: 2px 2px rgb(64, 64, 65), 2px 2px ;
+          float: left;
+          margin-left: 50px;
+          top:8%;
+      }
+
+  .desctwo {
+          position: absolute;
+          color:  white ;
+          font-size: 52px;
+          text-shadow: 3px 3px rgb(71, 71, 71), 3px 3px ;
+          float: left;
+          margin-left: 50px;
+          top:24%;
+      }
+
+    
+  .fimg{
+        filter: drop-shadow(2px 5px 3px rgb(141, 160, 243));
+        height: 650px ;
+        width:  100%;
+        float: right;
+        margin: 0px 0px 20px 0px   ;
+        opacity: 0.8;
+    }
+    
+.slideshow{
+  margin:0 0 210px 0;
+  padding: 0;
+  width: 100%;
+}
+
+@keyframes slide{
+
+  0%{left:0;}
+  10%{left:0;}
+  20%{left:-100%;}
+  30%{left:-100%;}
+  40%{left:-200%;}
+  50%{left:-200%;}
+  60%{left:-300%;}
+  70%{left:-300%;}
+  80%{left:-400%;}
+  90%{left:-400%;}
+  100%{left:0;}
+
+}
+
+#slider{
+  overflow: hidden;
+}
+
+#slider figure img{
+  float: left;
+  width: 20%;
+  height: auto;
+}
+
+#slider figure{
+  position: relative;
+  width: 500%;
+  animation: slide 10s infinite;
+  margin: 0;
+  
+}
+
+    
+ol {
+  padding: 20px;
+}
+
+
+ol li {
+  background: #3162a4;
+  padding: 5px;
+  margin-left: 35px;
+}
+
+li a{
+text-decoration: none ;
+font-size:14px;
+color:white;
+  text-shadow: 1px 1px rgb(64, 64, 65), 1px 1px ;
+}
+
+li a:hover {
+text-decoration: underline;
+font-size:16px;
+}
+
+.news{
+  background: #eeaf16;
+width:38%;
+position:absolute;
+top:700px;
+}
+
+.news h1{
+  margin-left:32px;
+  font-weight: 600;
+}
+
+.ann{
+     margin: 50px 0px 70px 0px;
+     border: 3px solid rgb(94, 94, 94);
+     float: right;
+     padding: 2.5%;
+     box-shadow: -5px -5px rgb(192, 192, 192), 0px 0px ;
+    }
+
+    .pic{
+      height: 170px;
+      width: 170px;
+      float: left;
+      margin-left: 70px;
+      margin-top: 120px;
+    }
+    
+    .ann a{
+      color: rgb(255, 0, 0);
+      padding: 20px;
+      font-size: 25px;
+     animation-name: clickhere;
+     animation-duration: 4s;
+     animation-iteration-count: infinite;
+}
+
+@keyframes clickhere {
+  0%   {color: rgb(255, 255, 255);}
+  25%  {color: rgb(253, 76, 76);}
+  50%  {color: rgb(255, 24, 24);}
+  100% {color: rgb(255, 0, 0);}
+}
+    
+    .ann p {
+    font-weight: 800;
+      font-size: 23px;
+      color: rgb(0, 4, 36);
+      font-family: serif;
+      padding: 0px 0px 33px 0px;
+    }
+    
+    .ann a:hover{
+      text-shadow: -1px -1px rgb(139, 139, 139), 0px 0px ;
+      color: rgb(255, 0, 0);
+      }
+
+      .cta{
+        padding: 50px 0px 0px 50px ;
+        background-image: url(bg-3.jpg);
+        float: right;
+        margin-bottom: 70px;
+        }
+        
+        .cta-select{
+        border:2px solid  ;
+        border-radius: 5px;
+        border-top-color: white;
+        border-left-color: rgb(241, 206, 6);
+        border-right-color: white;
+        border-bottom-color:rgb(241, 206, 6) ;
+        box-shadow: 1px 1px 1px 1px  rgb(153, 153, 153);
+        background: rgb(104, 104, 104);
+        color: #ffffff ;
+        width: 160px;
+        height: 60px;
+        cursor: pointer;
+        margin: 50px 50px 60px 50px ;   
+        }
+  
+        .cta a{
+          color: rgb(255, 255, 255);
+          font-weight: 600;
+          text-decoration: none;
+          font-size: 17px;
+          font-style: serif;
+        }
+        
+        .cta a:hover{
+          color: rgb(241, 206, 6);
+        }
+        
+    .desc2 {
+     font-size: 50px;
+    float: left;
+    width: 27%;
+    font-weight: 800;
+    margin-left: 2%;
+    margin-top: 12%;
+    background : linear-gradient(to right , #190b96,  rgb(241, 206, 6));
+    -webkit-background-clip: text ;
+    -webkit-text-fill-color: transparent ;
+    }
+
+    .onlearning h3{
+    color:  white ;
+    font-size: 41px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px rgb(64, 64, 65), 2px 2px ;
+    position:absolute;
+    right:25px;
+    margin-top: 1%;
+  }
+  
+  .onlearning h2{
+    font-size: 24px;
+    line-height: 28px;
+    float: left;
+    width: 27%;
+    margin-left: 2%;
+    margin-top: 1%;
+    background : linear-gradient(to right ,  #000000, #020633);
+    -webkit-background-clip: text ;
+    -webkit-text-fill-color: transparent ;
+  }
+
+  .onlearning img{
+   filter: drop-shadow(2px 5px 3px  rgb(77, 77, 77));
+   position:relative;
+   float: right;
+   height: 450px;
+   width: 840px;
+  }
+  
+  .onlearning h3:hover{
+  text-shadow: 3px 3px rgb(64, 64, 65), 3px 3px ;
+  text-decoration: underline white;
+  }
+
+  .onlearning{
+      display: inline-block;
+      margin-bottom: 77px;
+  }
+   
+
+   .campus{
+        width: 100%;
+        height: 500px;
+        opacity: 0.5;
+        margin-bottom: 60px;
+        filter: drop-shadow(2px 5px 3px rgb(141, 160, 243));
+      }
+
+
+
+
+</style>
+
+<nav class="navigation">
+  <div id="active"><a href="main.html"> Home</a></div>
+  <div><a href="profile.html">Profile</a></div>
+  <div><a href="info.html">About</a></div>
+  <div><a href="help.html">Help</a></div>
+</nav>
+
+
+      
+  
+<div class="intro-image">
+<section class="slideshow">
+<div id="slider">
+  
+  <figure>
+  
+    <img src="slide 1.jpg"  height="500px">
+    
+    <img src="slide 2.png"  height="500px" >
+    
+    <img src="slide 3.jpg"  height="500px">
+    
+    <img src="slide 4.jpg"  height="500px">
+    
+    <img src="slide 5.jpg"  height="500px">
+  </figure>
+  </div>
+  </section>
+
+      <h1 class="descone ">Faculty Of Science</h1>  <br> <h1 class="desctwo"> transforming lives since 1959</h1> 
+      </div>
+
+
+
+
+
+      <div class="news">
+        <h1>LATEST NEWS</h1>
+        
+        <ol>
+          <li> <a href="#">News from FACULTY OF SCIENCE </a> </li>
+          <li> <a href="#">Information for Journalists </a> </li>
+          <li> <a href="#"> Journalists : find an expert </a> </li>
+           <li> <a href="#"> Events at FACULTY OF SCIENCE  </a> </li>
+           <li> <a href="#"> Blogs  </a> </li>
+        </ol>
+        
+      </div>
+
+
+
+
+
+      <section>
+  
+          <div>
+          <img class="pic" src="ann.jpg">
+          </div>  
+       
+      
+          <div class="ann">
+          <a href="#"><h1>click here</h1></a> <br>
+          <p> click on the above link to see lastest updates and announcments for students !! </p>
+          </div>
+          </section>
+  
+  
+  
+  
+    <section>
+    
+    <h1 class="desc2 "> what <br> are<br> you <br> looking <br> for  ?</h1>
+  
+  <div class="cta">
+   
+  
+  <button class="cta-select"> <a href="#" > projects </a> </button>
+  <button class="cta-select"><a href="#" > learning tools </a></button>
+  <button class="cta-select"> <a href="#" > sport </a> </button> <br>
+  <button id="4th" class="cta-select"> <a href="#" > students blogs </a></button>
+  <button class="cta-select"> <a href="#" > graduate council </a></button>
+  <button class="cta-select"><a href="#" > coursefs1 </a></button>
+  
+  
+    </div>
+  </section>
+  
+  
+  
+
+  <section>
+  <div class="onlearning">
+    
+    <div>
+        <h2>faculty of science classes are now online. Distance learning is provided for the students through this portal.
+          Choose your branch, then choose your specialization and year/semester, and finally ask to join the courses you need.
+          Once the instructor of the course approves your enrollment, you will be able to attend the virtual class for this course online. </h2>
+    </div>  
+          <a href="#"><img class="teams" src="teams main.jpg" alt=""></a>
+
+      <a href="#"> <h3> faculty of science distance learning </h3></a>
+    
+  
+   </div>
+  </section>
+
+  
+<footer class="footer">
+  <div class="quick-links">
+    <div class="heading">
+      <h2> ABOUT </h2>
+      <a href="http://coursefs1.ul.edu.lb/moodle/index.php">Courses</a>
+      <a href="https://www.ul.edu.lb/faculte/council.aspx?facultyId=6">Faculty Council</a>
+      <a href="https://www.ul.edu.lb/faculte/regulations.aspx?facultyId=6">Rules & Regulations</a>
+
+    </div>
+    <div class="heading">
+      <h2>CONTACT US</h2>
+      <a href="tel:(+961)05461469">Phone</a>
+      <a href="http://ulfds1.ul.edu.lb/index.php?option=com_mailto&tmpl=component&link=aHR0cDovL3VsZmRzMS51bC5lZHUubGIvaW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZ2aWV3PWFydGljbGUmaWQ9NjphYm91dC11cyZJdGVtaWQ9MjU=">Email</a>
+      <a href="mailto:doyenfs@ul.edu.lb">The Dean's Office</a>
+
+    </div>
+    <div class="heading">
+      <h2> SOCIAL MEDIA </h2>
+      <a href="https://www.facebook.com/ul.fsciences/">Facebook</a>
+      <a href="https://www.instagram.com/ulfsciences/?hl=en">Instagram</a>
+      <a href="https://twitter.com/ulfsciences?lang=en">Twitter</a>
+    </div>
+  </div>
+  <div class="student">
+    Copyright &copy; Ahmad Houjayrie 99674
+  </div>
+</footer>
+</body>
+</html>
